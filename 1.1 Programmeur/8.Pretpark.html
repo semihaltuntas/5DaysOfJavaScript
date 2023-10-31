@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon"> 
+    <script>
+        "use strict";
+
+        let bezoekerLeeftijd = Number(prompt("tik een leeftijd"));
+        let kortingAantal = 0;
+
+        while (bezoekerLeeftijd != 0) {
+            if (bezoekerLeeftijd < 7 || bezoekerLeeftijd > 80) {
+                kortingAantal++
+            }
+            bezoekerLeeftijd = Number(prompt("tik een leeftijd"))
+        }
+        console.log("Aantal bezoeker dat korting kreeg:", kortingAantal);
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

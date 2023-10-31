@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon"> 
+    <script>
+        "use strict";
+
+        let wolwassenen = 0;
+        let kinderen = 0;
+        let leeftijd = Number(prompt("tik een leeftijd"));
+
+        while (leeftijd !== 0) {
+            if (leeftijd >= 18) {
+                wolwassenen++
+            } else {
+                kinderen++
+            }
+            leeftijd = Number(prompt("tik een leeftijd"))
+
+        }
+        console.log("AantalWolwassenen:", wolwassenen);
+        console.log("AantalKinderen:", kinderen)
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

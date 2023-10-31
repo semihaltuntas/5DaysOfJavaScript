@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon">
+    <script>
+
+
+        "use strict";
+        /*.........*/
+
+        /* BV1 
+         
+          const rechthoeken=[];
+          let lengte=Number(prompt("lengte"));
+          while (lengte!==0) {
+              rechthoeken.push
+              
+          }
+          */
+
+        /* BV2
+        const rechthoeken=[
+        
+        {lengte:3,breedte:2,kleur:"rood"},
+        {lengte:7, breedte:4,kleur:"groen"}
+        
+        ] 
+        for(const rechthoek of rechthoeken)
+        console.log(rechthoek.lengte,rechthoek.breedte,rechthoek.kleur);
+        */
+
+        /* BV3
+         const rechthoeken = [];
+        let lengte = Number(prompt("lengte"));
+
+        while (lengte !== 0) {
+            rechthoeken.push({
+                lengte: lengte,
+                breedte: Number(prompt("breedte")),
+                kleur: prompt("kleur")
+            }), 
+            lengte = Number(prompt("lengte"))
+
+            for (const rechthoek of rechthoeken) {
+                console.log(rechthoek.lengte, rechthoek.breedte, rechthoek.kleur);
+            }
+        } 
+        */
+        /* BV4
+         "use strict";
+         const adres = {
+             straat: "Keizerslaan",
+             huisnummer: 11,
+             gemeente: {
+                 postcode: 1000,
+                 naam: "Brussel"
+             }
+         };
+         console.log(adres.gemeente.naam);
+         */
+        "use strict";
+        const persoon = {
+            familienaam: "Desmet",
+            voornamen: ["Hans", "Cyriel"]
+        };
+        for (const voornaam of persoon.voornamen) {
+            console.log(voornaam);
+        }
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

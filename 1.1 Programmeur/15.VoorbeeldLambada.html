@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon">
+    <script>
+        "use strict";
+        /* 1
+         const kwadraat = getal => getal * getal;
+         console.log(kwadraat(4));
+         const som = (getal1, getal2) => getal1 + getal2;
+         console.log(som(4, 2))
+         const verschil = (getal1, getal2) => { const hetVerschil = getal1 - getal2; return hetVerschil; };
+         console.log(verschil(5, 2));
+         */
+
+        /* 2
+         const getallen = [3, 7];
+         getallen.forEach(getal => console.log(getal));
+         */
+
+        /* 3
+        const getallen = [-1,-4,-5, 2, 3, 4, 0];
+         const positieveGetallen = getallen.filter(getal => getal > 0);
+         positieveGetallen.forEach(getal => console.log(getal));
+         */
+
+        /* 3 KORTER
+        [-1,-4,-5, 2, 3, 4, 0].filter(getal => getal < 0).forEach(getal => console.log(getal))
+        */
+        /*
+
+        [{ naam: "Hans", kinderen: 3 },
+        { naam: "Hendrik", kinderen: 2 },
+        { naam: "Gerard", kinderen: 2 },
+        { naam: "José", kinderen: 2 }
+        ].filter(persoon => persoon.kinderen === 2)
+            .forEach(persoon => console.log(persoon.naam, ":", persoon.kinderen));
+            */
+
+        /* 4 Map
+        [2, 4, 5].map(getal => getal * getal)
+            .forEach(kwadraat => console.log(kwadraat));
+            */
+
+        /* 4 Map2
+         [{ lengte: 3, breedte: 2 },
+         { lengte: 5, breedte: 4 }
+         ].map(rechthoek => rechthoek.lengte * rechthoek.breedte)
+             .forEach(oppervlakte => console.log(oppervlakte));
+             */
+
+        /* 5 reduce 
+        console.log([2, 5, 8, 11].reduce((som, getal) => som + getal));*/
+
+        /* 5 reduce 
+        console.log([5, 8, 2, 11].reduce(
+            (kleinste, getal) => { if (kleinste < getal) return kleinste; return getal; }));*/
+            
+       /* 6 map and reduce combinatie
+        console.log(
+            [{ lengte: 3, breedte: 2 }, { lengte: 5, breedte: 4 }
+            ].map(rechthoek => rechthoek.lengte * rechthoek.breedte)
+                .reduce((som, oppervlakte) => som + oppervlakte)); */
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

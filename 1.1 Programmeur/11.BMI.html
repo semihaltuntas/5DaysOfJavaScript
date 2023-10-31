@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon">
+    <script>
+
+
+
+        /*.........*/
+
+        "use strict";
+        const personen = [];
+        let naam = prompt("tik een naam");
+
+        while (naam !== "stop") {
+            personen.push({
+                naam: naam,
+                gewicht: Number(prompt("gewicht")),
+                lengthe: Number(prompt("lengthe"))
+
+            })
+
+            naam= prompt("tik een naam");
+        }
+
+       personen.forEach(persoon =>  console.log(persoon.naam, persoon.gewicht / (persoon.lengthe * persoon.lengthe)))
+        
+       
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

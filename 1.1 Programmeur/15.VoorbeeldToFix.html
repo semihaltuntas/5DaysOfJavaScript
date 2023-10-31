@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon"> 
+    <script>
+        "use strict";
+        const prijsVanEenAppel = 0.34;
+        const aantalAppels = 7;
+        let teBetalen = prijsVanEenAppel * aantalAppels;
+        teBetalen = Number(teBetalen.toFixed(2)); 
+        console.log(teBetalen);
+
+        const prijsVanEenPeer = 0.34;
+        const aantalPeren = 9;
+        teBetalen += prijsVanEenPeer * aantalPeren; 
+        console.log(teBetalen.toFixed(2));
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

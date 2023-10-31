@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon">
+    <script>
+
+
+
+        /*.........*/
+        "use strict";
+        /*  BV
+          const naam=prompt("naam");
+          console.log("je naam bevat",naam.length,"letters.");
+          */
+
+        /* BV1
+        const naam=prompt("naam");
+        let name1="";
+        for(const letter of naam){
+         name1+= letter;
+        }       
+        console.log("naam:",name1);
+        */
+        /*
+        const voornaam = prompt("Voornaam");
+        const familienaam = prompt("Familienaam");
+        const naam = `${voornaam} ${familienaam}`; 
+        console.log(naam); 
+        */
+        /* BV3
+        const getal1 = 7;
+        const getal2 = 3;
+        console.log(`De som van ${getal1} en ${getal2} is ${getal1 + getal2}.`);
+        */
+        /* BV4 
+         const voornaam = "Alexandra";
+         console.log(voornaam.startsWith("An"));
+         console.log(voornaam.includes("dr"));
+         console.log(voornaam.endsWith("dra"));
+ 
+         const spreuk = "De juiste tijd kiezen is tijd besparen";
+         console.log(spreuk.indexOf("tijd"));
+         console.log(spreuk.lastIndexOf("tijd"));
+         */
+        const voornaam = "Alexandra";
+        console.log(voornaam.toUpperCase());
+        console.log(voornaam.toLowerCase());
+        console.log(voornaam.slice(2));
+        console.log(voornaam.slice(2, 6));
+        console.log(voornaam.slice(-2));
+        console.log(voornaam.replace("x", "ks"));
+        console.log(voornaam);
+        const metSpaties = " Alexandra ";
+        console.log(`>${metSpaties.trim()}<`);
+        console.log(`>${metSpaties.trimStart()}<`);
+        console.log(`>${metSpaties.trimEnd()}<`);
+        
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

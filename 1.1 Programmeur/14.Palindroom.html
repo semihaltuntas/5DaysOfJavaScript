@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon"> 
+    <script>
+        "use strict";
+
+        /* Eerste oplossing
+        
+        const woord=prompt("woord");
+         const tersKelime=woord.split('').reverse().join('');
+ 
+         if (woord===tersKelime) {
+             console.log("dit is palindroom")
+             
+         } else {
+             console.log("dit is geen palindroom")
+         }
+ 
+         */
+        const woord = prompt("woord");
+        let palindroom = true;
+        for (let volgnummer = 0; volgnummer < woord.length / 2 && palindroom; volgnummer++) {
+            if (woord[volgnummer] !== woord[woord.length - volgnummer - 1]) {
+                palindroom = false;
+            }
+        }
+        if (palindroom) {
+            console.log(`${woord} is een palindroom.`)
+
+        } else {
+
+            console.log(`${woord} is geen palindroom.`)
+        }
+
+        /*
+        const kelime = prompt("Bir kelime girin");
+ const kelimeUzunluk = kelime.length;
+ let palindrom = true;
+ 
+ // Kelimenin başından ve sonundan işaretçileri kullanarak karşılaştırın
+ for (let i = 0; i < kelimeUzunluk / 2; i++) {
+     if (kelime[i] !== kelime[kelimeUzunluk - 1 - i]) {
+         palindrom = false;
+         break;
+     }
+ }
+ 
+ if (palindrom) {
+     console.log("Bu bir palindrom kelime.");
+ } else {
+     console.log("Bu bir palindrom kelime değil.");
+ }
+        
+        */
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

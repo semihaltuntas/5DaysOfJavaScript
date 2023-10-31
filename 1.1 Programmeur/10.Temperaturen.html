@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon">
+    <script>
+
+
+        /*.........*/
+
+        "use strict";
+        const inputVriesTemp = [];
+        let temperatuur = Number(prompt("Tik een temperatuur"));
+
+        while (temperatuur !== 777) {
+            if (temperatuur <= 0) {
+                inputVriesTemp.push((temperatuur));
+            }
+            temperatuur = Number(prompt("Tik een temperatuur"));
+        }
+        inputVriesTemp.forEach(element =>  console.log(element));
+        
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

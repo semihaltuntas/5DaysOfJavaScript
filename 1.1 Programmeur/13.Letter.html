@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon"> 
+    <script>
+        "use strict";
+
+        const woord=prompt("typt een woord");
+        const zoekLetter= prompt("typt een letter");
+        let hoeveel=0;
+        for(const letter of woord){
+            if (letter===zoekLetter) {
+                hoeveel++;
+                }
+        }
+        console.log(` ${zoekLetter} komt ${hoeveel} keer voor in ${woord}.`)
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

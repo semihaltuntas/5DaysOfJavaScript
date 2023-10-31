@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon">
+    <script>
+        "use strict"; const personen = tikPersonen();
+        if (personen.length !== 0) {
+            const kleinsteLengte = berekenKleinsteLengte(personen);
+            console.log("Kleinste lengte:", kleinsteLengte);
+            toonPersonenMetLengte(personen, kleinsteLengte);
+            const grootsteLengte = berekenGrootsteLengte(personen);
+            console.log("Grootste lengte:", grootsteLengte);
+            toonPersonenMetLengte(personen, grootsteLengte);
+        }
+        function tikPersonen() {
+            const personen = [];
+            let naam = prompt("Naam");
+            while (naam !== "stop") {
+                personen.push({ naam: naam, lengte: Number(prompt("Lengte")) });
+                naam = prompt("Naam");
+            }
+            return personen;
+        }
+        function berekenKleinsteLengte(personen) {
+            return personen.map(persoon => persoon.lengte)
+                .reduce((kleinste, lengte) => kleinste < lengte ? kleinste : lengte);
+        }
+        function berekenGrootsteLengte(personen) {
+            return personen.map(persoon => persoon.lengte)
+                .reduce((grootste, lengte) => grootste > lengte ? grootste : lengte);
+        }
+        function toonPersonenMetLengte(personen, lengte) {
+            personen.filter(persoon => persoon.lengte === lengte)
+                .forEach(persoon => console.log(persoon.naam, persoon.lengte));
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

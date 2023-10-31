@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Van Blockly naar JavaScript</title>
+    <link rel="icon" href="javascript.ico" type="image/x-icon"> 
+    <script>
+        "use strict";
+        function keuze() { 
+            let antwoord = prompt("Maak uw keuze (+ voor som, - voor verschil)");
+            while (antwoord !== "+" && antwoord !== "-") {
+                antwoord = prompt("Verkeerde keuze, probeer opnieuw.");
+            }
+            return antwoord;
+        }
+        const getal1 = 30;
+        const getal2 = 10;
+        const bewerking = keuze();
+        console.log("We hebben voor u de getallen ", getal1, " en ", getal2);
+        if (bewerking === "+") {
+            console.log("De som is ", getal1 + getal2);
+        } else {
+            console.log("Het verschil is ", getal1 - getal2);
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
